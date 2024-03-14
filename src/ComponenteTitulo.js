@@ -1,7 +1,8 @@
-function ComponenteTitulo(){
+function ComponenteTitulo(props){
     return(
+      
         <h1>
-            Has completado x de y tareas
+            Has completado {props.ntareas} de {props.totaltareas} tareas
         </h1>
     )
 }
