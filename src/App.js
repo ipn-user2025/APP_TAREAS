@@ -1,4 +1,5 @@
-import './App.css';
+import React from 'react';
+import "./estilos.css"
 import { Tareas } from './Tareas';
 import { ComponenteTitulo } from './ComponenteTitulo';
 import { ComponenteBuscar } from './ComponenteBuscar';
@@ -14,23 +15,26 @@ const tareasDefecto =[
 
 function App() {
   return (
-    <div className="App">
+    <React.Fragment>
       <ComponenteTitulo ntareas={3} totaltareas={5} />
       <ComponenteBuscar />
-      <ComponenteLista>
-        {tareasDefecto.map(todo=>(
-          <Tareas
-           key ={todo.text}
-           text ={todo.text}
-           completed ={todo.completed}
-         />
+    <div class ="container"> 
+        <ComponenteLista>
+          {tareasDefecto.map(todo=>(
+            <Tareas
+              key ={todo.text}
+              text ={todo.text}
+              completed ={todo.completed}
+             />
         ))}
        
-      </ComponenteLista>
-
-      <ComponenteBoton />
-
-    </div>
+        </ComponenteLista>
+        <div id="container2">
+          <img id="img inicio" src="" alt="imagen" />
+          <ComponenteBoton />
+         </div>
+      </div>
+      </React.Fragment>
   );
 }
 

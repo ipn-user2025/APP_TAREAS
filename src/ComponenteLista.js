@@ -1,6 +1,8 @@
+import "./estilos.css"
+
 function ComponenteLista(props){
     return(
-        <ul>
+        <ul class ="lista">
             {props.children}
         </ul>
     )

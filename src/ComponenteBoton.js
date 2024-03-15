@@ -1,6 +1,8 @@
+import "./estilos.css"
+
 function ComponenteBoton (){
     return (
-        <button>Agregar</button>
+        <button class ="boton">Agregar</button>
     )
 }
 

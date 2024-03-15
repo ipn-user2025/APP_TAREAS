@@ -1,6 +1,11 @@
+
+import "./estilos.css"
+
 function ComponenteBuscar(){
     return(
-        <imput placeholder="Buscar tarea" />
+        <div class="buscador"> 
+        <input  type="text" placeholder="Buscar tarea" />
+        </div>
     )
 }
 
