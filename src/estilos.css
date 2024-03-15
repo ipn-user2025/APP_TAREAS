@@ -1,42 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
 
-#titulo {
+
+.body{
+    width: 100%;
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+}
+.encabezado{
+   
+   margin-bottom: 12px;
+}
+.tituloPrincipal {
     font-family: "Madimi One", sans-serif;
     font-weight: 400;
     font-style: normal;
     text-align: center;
     border: 0;
-    background-color: blue;
+    margin: 0;
 }
+.titulo {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    border: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+/* ----------------------------------------------------------------------------------------  */
 
 .buscador{
-    display: flex;
-    justify-content: center;
-    border: 0;
-    background-color:blueviolet;
+    text-align: center;
 }
 
-.lista{
-    background-color: aqua;
-    width: 70%;
-    margin: 6px;
+.buscador > :first-child{
+    border-radius: 10px;
+    width: 200px;
+    height: 24px;
+    text-align: center;
     
 }
 
-.boton{
-    background-color: brown;
- 
-}
-
+/* ----------------------------------------------------------------------------------------  */
 .container{
     display: flex;
     justify-content:space-between;
     border: 0;
     
 }
-#container2{
+
+.lista{
+    width: 70%;
+    margin: 0px;
+    list-style: none;
+    padding: 0 ;
+    
+}
+
+.listaTareas{
+    display: flex;
+    justify-content:space-between;
+    padding: 16px;
+    margin-top: 12px;
+    border-style: inset;
+}
+
+.tarea{
+    font-family: "Madimi One", sans-serif;
+    width: 80%;
+    margin: 0;
+}
+
+.tareaCompletada{
+    width: 34px;
+    height: 34px;
+}
+.tareaCompletada:hover{
+    cursor: pointer;
+}
+
+.eliminarTarea{
+    width: 24px;
+    height: 24px;
+}
+
+.eliminarTarea:hover{
+    cursor: pointer;
+}
+/* ----------------------------------------------------------------------------------------  */
+
+.container2{
     display:flex;
     flex-direction: column;
     width: 30%;
     margin: 6 px;
+    padding-top: 6px;
+    height: 100vh;
 }
+
+.imginicio{
+    margin-top: 24px;
+    align-self:center;
+    width: 300;
+    height: 300px;
+}
+.boton{
+    align-self:center;
+    margin-bottom: 200px;
+    margin-top: auto;
+    width: 100px;
+    height: 100px;
+    border: none;
+}
+.boton:hover{
+    cursor: pointer;
+}
+
+.boton > :first-child{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/* ----------------------------------------------------------------------------------------  */
+
+
+
+
+

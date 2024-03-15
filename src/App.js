@@ -5,6 +5,9 @@ import { ComponenteTitulo } from './ComponenteTitulo';
 import { ComponenteBuscar } from './ComponenteBuscar';
 import { ComponenteLista } from './ComponenteLista';
 import { ComponenteBoton } from './ComponenteBoton';
+import {ComponenteTituloPrincipal} from './ComponenteTituloPrincipal';
+import img1 from './img inicio.png';
+
 
 const tareasDefecto =[
   {text :"Tarea 1", completed: true},
@@ -16,9 +19,13 @@ const tareasDefecto =[
 function App() {
   return (
     <React.Fragment>
-      <ComponenteTitulo ntareas={3} totaltareas={5} />
+  <div className='body'>
+      <div className="encabezado">
+        <ComponenteTituloPrincipal/>
+        <ComponenteTitulo ntareas={3} totaltareas={5} />
+      </div>
       <ComponenteBuscar />
-    <div class ="container"> 
+    <div className ="container"> 
         <ComponenteLista>
           {tareasDefecto.map(todo=>(
             <Tareas
@@ -29,10 +36,11 @@ function App() {
         ))}
        
         </ComponenteLista>
-        <div id="container2">
-          <img id="img inicio" src="" alt="imagen" />
-          <ComponenteBoton />
+        <div className="container2">
+        <img className="imginicio" src={img1} alt="imagen" />
+        <ComponenteBoton />
          </div>
+      </div>
       </div>
       </React.Fragment>
   );

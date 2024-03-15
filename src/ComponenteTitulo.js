@@ -1,9 +1,10 @@
 import "./estilos.css"
 
+
 function ComponenteTitulo(props){
     return(
       
-        <h1 id = "titulo">
+        <h1 className= "titulo">
             Has completado {props.ntareas} de {props.totaltareas} tareas
         </h1>
     )

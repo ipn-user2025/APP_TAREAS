@@ -2,7 +2,7 @@ import "./estilos.css"
 
 function ComponenteLista(props){
     return(
-        <ul class ="lista">
+        <ul className ="lista">
             {props.children}
         </ul>
     )
