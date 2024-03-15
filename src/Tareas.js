@@ -8,8 +8,16 @@ function Tareas(props){
           Tarea numero {props.text}
         </p>
 
-        <img className={`tareaCompletada ${props.completed && "tareaCompletada-marcada"}`} src={logo1} alt="OK" />
-        <img className={`eliminarTarea ${props.completed ? "" : "eliminarTarea-marcada"}`} src={logo2} alt="Borrar" />
+        <img className={`tareaCompletada ${props.completed && "tareaCompletada-marcada"}`} src={logo1} alt="OK" 
+          onClick={() => {
+            console.log("Le diste click")
+        }}
+        />
+        <img className={`eliminarTarea ${props.completed ? "" : "eliminarTarea-marcada"}`} src={logo2} alt="Borrar" 
+          onClick={() => {
+            console.log("Le diste click")
+        }}
+        />
         
       </li>
   

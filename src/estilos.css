@@ -135,6 +135,7 @@ text-decoration: line-through;
 .boton > :first-child{
     width: 100%;
     height: 100%;
+    transition: transform 0.3s ease-in-out;
 }
 
 .boton > :first-child:hover{

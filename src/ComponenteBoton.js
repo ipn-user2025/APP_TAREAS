@@ -3,7 +3,11 @@ import logo3 from './logo agregar.png';
 
 function ComponenteBoton (){
     return (
-        <button className ="boton">
+        <button className ="boton"
+            onClick={() => {
+                console.log("Le diste click")
+            }}
+        >
            <img  src={logo3} alt="OK" />
         </button>
     )
