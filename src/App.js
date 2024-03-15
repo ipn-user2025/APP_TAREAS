@@ -10,9 +10,9 @@ import img1 from './img inicio.png';
 
 
 const tareasDefecto =[
-  {text :"Tarea 1", completed: true},
-  {text :"Tarea 2", completed: true},
-  {text :"Tarea 3", completed: true},
+  {text :"Tarea 1", completed: false},
+  {text :"Tarea 2", completed: false},
+  {text :"Tarea 3", completed: false},
   {text :"Tarea 4", completed: true}
 ]
 

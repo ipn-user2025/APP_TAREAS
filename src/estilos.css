@@ -72,22 +72,35 @@
     width: 80%;
     margin: 0;
 }
+.tareasubrayada{
+text-decoration: line-through;
+}
 
 .tareaCompletada{
     width: 34px;
     height: 34px;
+
 }
 .tareaCompletada:hover{
     cursor: pointer;
 }
+.tareaCompletada-marcada{
+    background-color: rgb(155, 229, 177);
+    border-radius: 20px;
+}
 
 .eliminarTarea{
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
+
 }
 
 .eliminarTarea:hover{
     cursor: pointer;
+}
+.eliminarTarea-marcada{
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
 }
 /* ----------------------------------------------------------------------------------------  */
 
@@ -116,14 +129,17 @@
 }
 .boton:hover{
     cursor: pointer;
+   
 }
 
 .boton > :first-child{
     width: 100%;
     height: 100%;
-
 }
 
+.boton > :first-child:hover{
+    transform: rotate(225deg);
+}
 
 /* ----------------------------------------------------------------------------------------  */
 
