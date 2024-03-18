@@ -1,5 +1,5 @@
 
-import "./estilos.css"
+import "../estilos.css"
 
 function ComponenteTituloPrincipal (){
 

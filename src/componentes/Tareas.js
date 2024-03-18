@@ -1,6 +1,6 @@
 import React from 'react';
-import logo1 from './logoOK.png';
-import logo2 from './logo X.png';
+import logo1 from '../img/logoOK.png';
+import logo2 from '../img/logo X.png';
 
 function Tareas(props){
     return(

@@ -1,4 +1,4 @@
-import "./estilos.css"
+import "../estilos.css"
 
 function ComponenteLista(props){
     return(

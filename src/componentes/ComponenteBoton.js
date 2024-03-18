@@ -1,5 +1,5 @@
-import "./estilos.css"
-import logo3 from './logo agregar.png';
+import "../estilos.css"
+import logo3 from '../img/logo agregar.png';
 
 function ComponenteBoton (){
     return (

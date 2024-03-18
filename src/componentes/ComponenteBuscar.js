@@ -1,5 +1,5 @@
 import React from 'react';
-import "./estilos.css"
+import "../estilos.css"
 
 function ComponenteBuscar({textoBuscador,settextoBuscador}){
     
