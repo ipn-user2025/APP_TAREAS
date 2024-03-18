@@ -1,15 +1,13 @@
 import React from 'react';
 import "./estilos.css"
 
-function ComponenteBuscar(){
-    const[textoBuscador,settextoBuscador]= React.useState("")
-
-    console.log(textoBuscador)
+function ComponenteBuscar({textoBuscador,settextoBuscador}){
+    
 
     return(
         <div className="buscador"> 
             <input 
-                onChange={(event)=>{
+                onChange={(event)=>{ // contador de estados-eventos, recibe lo escrito por el usuario
                    settextoBuscador(event.target.value)
                 }}
                  type="text" 
