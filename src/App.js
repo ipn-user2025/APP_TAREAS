@@ -17,6 +17,7 @@ import img1 from './img/img inicio.png';
 // ]
 
 // localStorage.setItem("tareas_v1", JSON.stringify(tareasDefecto))
+
 function useLocalStorage (itemName, initialValue){
   
   const localStorageItem = localStorage.getItem(itemName) // inicializar datos en local storage convertiendo string a array
@@ -51,7 +52,7 @@ function App() {
   const completarTarea = (text) => {  // cambiar estados de completado al hacer clik en OK
     const nuevasTarea = [...contandorTareas] // crear copia del array de tareas
     const tareaid = nuevasTarea.findIndex(   // crear identificador ID
-     (contandorTareas) => contandorTareas.text == text // comparar ID
+     (contandorTareas) => contandorTareas.text === text // comparar ID
     ) 
     nuevasTarea[tareaid].completed = true  // realizar cambio de estado
     setcontandoTareas(nuevasTarea)
@@ -60,7 +61,7 @@ function App() {
   const borrarTarea = (text) => {  
     const nuevasTarea = [...contandorTareas] 
     const tareaid = nuevasTarea.findIndex(   
-     (contandorTareas) => contandorTareas.text == text 
+     (contandorTareas) => contandorTareas.text === text 
     ) 
     nuevasTarea.splice(tareaid,1)  // borrar tarea
     setcontandoTareas(nuevasTarea)
