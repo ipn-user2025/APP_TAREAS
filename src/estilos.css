@@ -29,6 +29,17 @@
     font-size: 20px;
 }
 
+.efectosCargar{
+    
+    text-align: center;
+    align-self:center;
+
+}
+
+.loading{
+    width: 150px;
+    height: 150px;
+}
 /* ----------------------------------------------------------------------------------------  */
 
 .buscador{
@@ -51,7 +62,10 @@
     
 }
 
+
+
 .lista{
+   
     width: 70%;
     margin: 0px;
     list-style: none;
