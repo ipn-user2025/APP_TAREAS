@@ -1,10 +1,11 @@
 import "../estilos.css"
 import logo3 from '../img/logo agregar.png';
 
-function ComponenteBoton (){
+function ComponenteBoton ({setOpenModal}){
     return (
         <button className ="boton"
             onClick={() => {
+                setOpenModal(state=>!state)
                 console.log("Le diste click")
             }}
         >

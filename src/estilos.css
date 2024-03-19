@@ -140,6 +140,7 @@ text-decoration: line-through;
     width: 100px;
     height: 100px;
     border: none;
+    z-index: 1;
 }
 .boton:hover{
     cursor: pointer;
@@ -158,6 +159,18 @@ text-decoration: line-through;
 
 /* ----------------------------------------------------------------------------------------  */
 
+.componenteModal{
+    background-color: rgba(32,35,41,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
 
 

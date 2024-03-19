@@ -8,6 +8,8 @@ import { ComponenteBoton } from './componentes/ComponenteBoton';
 import {ComponenteTituloPrincipal} from './componentes/ComponenteTituloPrincipal';
 import img1 from './img/img inicio.png';
 import imgLogo from './img/loading-loader.gif';
+import {ComponenteModal} from './componentes/ComponenteModal';
+
 
 
 // const tareasDefecto =[
@@ -18,7 +20,6 @@ import imgLogo from './img/loading-loader.gif';
 // ]
 
 // localStorage.setItem("tareas_v1", JSON.stringify(tareasDefecto))
-
 function useLocalStorage (itemName, initialValue){
 
   const[item , setItem] = React.useState(initialValue)
@@ -86,6 +87,8 @@ function App() {
     setcontandoTareas(nuevasTarea)
   } 
 
+  const[openModal,setOpenModal]= React.useState(false)
+
   return (
     <React.Fragment>
   <div className='body'>
@@ -120,7 +123,16 @@ function App() {
         </ComponenteLista>
         <div className="container2">
         <img className="imginicio" src={img1} alt="imagen" />
-        <ComponenteBoton />
+        <ComponenteBoton 
+          setOpenModal={setOpenModal}
+        />
+       
+        {openModal && (
+          <ComponenteModal />
+        )}
+          
+           
+
          </div>
       </div>
       </div>
