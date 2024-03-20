@@ -7,9 +7,11 @@ function ComponenteModal({setOpenModal,addTarea}){
   const[agregarTarea, setagregarTarea]=React.useState("")
   const onSubmit=(event)=>{
     event.preventDefault()
-    addTarea(agregarTarea)
+    if(agregarTarea.length>0){addTarea(agregarTarea)
     setOpenModal(false)
   }
+  setOpenModal(false)
+}
   
   const onCancel=()=>{
     setOpenModal(false)
