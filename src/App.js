@@ -87,6 +87,15 @@ function App() {
     setcontandoTareas(nuevasTarea)
   } 
 
+  const addTarea =(text) =>{
+    const nuevasTarea = [...contandorTareas]
+    nuevasTarea.push({
+      text,
+      completed: false,
+    })
+  setcontandoTareas(nuevasTarea)
+  }
+
   const[openModal,setOpenModal]= React.useState(false)
 
   return (
@@ -123,12 +132,15 @@ function App() {
         </ComponenteLista>
         <div className="container2">
         <img className="imginicio" src={img1} alt="imagen" />
+
         <ComponenteBoton 
           setOpenModal={setOpenModal}
         />
-       
         {openModal && (
-          <ComponenteModal />
+          <ComponenteModal 
+            setOpenModal={setOpenModal}
+            addTarea={addTarea}
+          />
         )}
           
            

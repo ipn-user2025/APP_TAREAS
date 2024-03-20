@@ -2,11 +2,43 @@ import React from 'react';
 import "../estilos.css"
 import ReactDOM from 'react-dom';
 
-function ComponenteModal(){
+function ComponenteModal({setOpenModal,addTarea}){
 
-    return ReactDOM.createPortal(
-      <div className='componenteModal'>
-        <h1> crear nuevas tareas </h1>
+  const[agregarTarea, setagregarTarea]=React.useState("")
+  const onSubmit=(event)=>{
+    event.preventDefault()
+    addTarea(agregarTarea)
+    setOpenModal(false)
+  }
+  
+  const onCancel=()=>{
+    setOpenModal(false)
+  }
+
+  const onChange=(event)=>{
+    setagregarTarea(event.target.value)
+  }
+  return ReactDOM.createPortal(
+    <div className='componenteModal'>
+      <form onSubmit={onSubmit}>  
+        <h1 className='tituloForm'> Crea tu nueva tarea </h1>
+        <textarea className="form" placeholder="Ej: preparar el almuerzo" 
+          value={agregarTarea}
+          onChange={onChange}
+        />
+        
+        <div className='botones'>  
+              <button className='botoncancelar' type='button'
+                onClick={onCancel}
+              >
+                Cancelar
+                
+              </button>
+              <button className='botonagregar' type='submit'>
+                Agregar 
+              </button>
+        </div>
+        </form>
       </div>,
       document.getElementById("modal")
     )

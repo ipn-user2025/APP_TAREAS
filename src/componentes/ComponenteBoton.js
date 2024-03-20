@@ -6,7 +6,7 @@ function ComponenteBoton ({setOpenModal}){
         <button className ="boton"
             onClick={() => {
                 setOpenModal(state=>!state)
-                console.log("Le diste click")
+                
             }}
         >
            <img  src={logo3} alt="OK" />

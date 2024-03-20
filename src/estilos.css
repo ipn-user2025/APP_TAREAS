@@ -33,6 +33,15 @@
     
     text-align: center;
     align-self:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
 }
 
@@ -143,8 +152,7 @@ text-decoration: line-through;
     z-index: 1;
 }
 .boton:hover{
-    cursor: pointer;
-   
+    cursor: pointer; 
 }
 
 .boton > :first-child{
@@ -170,8 +178,57 @@ text-decoration: line-through;
     left: 0;
     right: 0;
     bottom: 0;
+
+    flex-direction: column;
+    
+}
+
+.tituloForm{
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    border: 0;
+    margin: 0;
+    font-size: 20px;
+    padding-bottom: 14px;
+}
+
+.form{
+    width: 400px;
+    height: 100px;
+    border-radius: 10px;
+    border-style: ridge;
+    border-color: black;
+    
+}
+
+.botones{
+    
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    padding-top: 24px;
 }
 
 
+.botonagregar{
+    font-family: "Madimi One", sans-serif;
+    width: 80px;
+    height: 24px;
+    background-color: rgb(180, 232, 129);
+}
 
+.botoncancelar{
+    font-family: "Madimi One", sans-serif;
+    width: 80px;
+    height: 24px;
+    background-color: rgb(221, 135, 135);
+}
 
+.botonagregar:hover{
+    cursor: pointer; 
+}
+.botoncancelar:hover{
+    cursor: pointer; 
+}
