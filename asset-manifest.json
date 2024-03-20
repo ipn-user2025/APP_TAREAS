@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/APP_TAREAS/static/css/main.408b6ea0.css",
-    "main.js": "/APP_TAREAS/static/js/main.63d1a602.js",
+    "main.css": "/APP_TAREAS/static/css/main.0ce6f3a7.css",
+    "main.js": "/APP_TAREAS/static/js/main.ba6febb5.js",
     "static/media/loading-loader.gif": "/APP_TAREAS/static/media/loading-loader.148c0c88a4f005f68b5f.gif",
     "static/media/logoOK.png": "/APP_TAREAS/static/media/logoOK.10a67d87120afe23e9c5.png",
     "static/media/img inicio.png": "/APP_TAREAS/static/media/img inicio.634e288d4e52bf9334ac.png",
     "static/media/logo agregar.png": "/APP_TAREAS/static/media/logo agregar.348715b2025b3a4d28f9.png",
     "static/media/logo X.png": "/APP_TAREAS/static/media/logo X.ffdafe3f0eceab67b7c2.png",
     "index.html": "/APP_TAREAS/index.html",
-    "main.408b6ea0.css.map": "/APP_TAREAS/static/css/main.408b6ea0.css.map",
-    "main.63d1a602.js.map": "/APP_TAREAS/static/js/main.63d1a602.js.map"
+    "main.0ce6f3a7.css.map": "/APP_TAREAS/static/css/main.0ce6f3a7.css.map",
+    "main.ba6febb5.js.map": "/APP_TAREAS/static/js/main.ba6febb5.js.map"
   },
   "entrypoints": [
-    "static/css/main.408b6ea0.css",
-    "static/js/main.63d1a602.js"
+    "static/css/main.0ce6f3a7.css",
+    "static/js/main.ba6febb5.js"
   ]
 }
