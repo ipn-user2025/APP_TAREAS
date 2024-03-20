@@ -100,7 +100,7 @@ function App() {
 
   return (
     <React.Fragment>
-  <div className='body'>
+  <div className='body1'>
       <div className="encabezado">
         <ComponenteTituloPrincipal/>
         <ComponenteTitulo 
